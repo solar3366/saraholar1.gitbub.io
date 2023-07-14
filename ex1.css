@@ -1,0 +1,303 @@
+@font-face{
+  font-family: myFont;
+  src: url(akira_expanded/Akira.otf);
+}
+
+@font-face{
+  font-family: myFont2;
+  src: url(nexa/Nexa-Heavy.ttf);
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  font-family: myFont, Arial;
+}
+.banner{
+  width: 100%;
+  height: 100vh;
+  background-color: black;
+  /*background-image: linear-gradient(rgba(0,0,0,0.55),rgba(0,0,0,0.55)), url(images/background.webp);
+  background-size: cover;
+  background-position: center;*/
+} 
+
+.logo {
+  width: 50px;
+  cursor: pointer;
+  margin-left: -50px;
+}
+
+.navbar {
+ width: 85%; 
+ margin: auto;
+ padding: 35px 0;
+ display: flex;
+ align-items: center;
+ justify-content: space-between;
+}
+
+.navbar ul li {
+ list-style: none;
+ display: inline-block;
+ margin: 0 20px; 
+ position: relative;
+}
+
+.navbar ul li a {
+  text-decoration: none;
+  color: white;
+  text-transform: uppercase;
+}
+
+.navbar ul li::after {
+  content: '';
+  height: 2px;
+  width: 0;
+  background: rgb(255, 0, 123);
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  transition: 0.2s;
+}
+
+.navbar ul li:hover:after {
+  width: 100%;
+}
+
+.container{
+  scroll-snap-type: y mandatory;
+  overflow-y: scroll;
+  height: 100vh;
+}
+section{
+  height: 100vh;
+  display: block;
+  /*justify-content: center;
+  align-items: center;
+  scroll-snap-align: start;
+  */
+}
+
+h1{
+  color: white;
+  text-shadow: 1px 1px 5px #000;
+  margin-left: 50px;
+}
+
+.one{
+  background-color: black;
+}
+.two{
+background-color: black;
+}
+
+.container1{
+  width: 355.56px;
+  height: 200px;
+  display: inline-block;
+}
+.write-up{
+  display: inline-block;
+  color:white;
+  vertical-align: top;
+  margin-left: 50px;
+}
+
+.box{
+  margin-top: 50px;
+  margin-left: 50px;
+}
+
+.box2{
+  margin-top: 50px;
+  margin-left: 50px;
+}
+
+.drawing1{
+  display: inline-block;
+  width: 50%;
+}
+.drawing2{
+  display: inline-block;
+  width: 50%;
+}
+
+ul li ul.dropdown1 li {
+  display: block;
+  padding: 20px 5px;
+  color: #FFF;
+  text-decoration: none;
+  text-align: center;
+  font-size: 13px;
+}
+
+ul li ul.dropdown1 {
+  width: 100%;
+  background: rgb(255, 0, 123);
+  position: absolute;
+  /*z-index: 999;*/
+  display: none;
+}
+
+ul li a:hover {
+  background: rgb(255, 0, 123);
+  transition: 1s;
+}
+
+ul li:hover ul.dropdown1 {
+  display: block;
+}
+
+ul li ul.dropdown2 li {
+  display: block;
+  padding: 20px 5px;
+  color: #FFF;
+  text-decoration: none;
+  text-align: center;
+  font-size: 13px;
+}
+
+ul li ul.dropdown2 {
+  width: 100%;
+  background: rgb(255, 0, 123);
+  position: absolute;
+  /*z-index: 999;*/
+  display: none;
+}
+
+ul li a:hover {
+  background: rgb(255, 0, 123);
+  transition: 1s;
+}
+
+ul li:hover ul.dropdown2 {
+  display: block;
+}
+
+.header1 {
+  font-size: 50px;
+}
+
+.about-me{
+  margin-top: 3%;
+  margin-left: 40%;
+  }
+  
+  .profile-picture{
+    width: 300px;
+    display: inline-block;
+    vertical-align: top;
+    margin-top: -15%;
+    margin-right: 20%;
+  }
+  
+  .myinfo {
+    display:inline-block;
+    color: white;
+    font-weight: bold;
+    margin-left: 5px;
+    font-size:20px;
+    margin-top: 10%;
+  }
+
+  .write-up{
+    display: inline-block;
+    color:white;
+    vertical-align: top;
+    margin-left: 25%;
+    font-size:30px;
+  }
+  
+  .box{
+    margin-top: -950px;
+    margin-left: 0px;
+  }
+
+  .container1{
+    width: 150px;
+    height: 150px;
+    display: inline-block;
+  }
+  .one {
+    padding: 10 10 10;
+  }
+
+  .about-logo {
+    margin-top: 3%;
+    width: 300px;
+    display: inline-block;
+     vertical-align: top;
+     margin-right: 5%;
+  }
+
+  .two-Notes {
+    display: inline-block;
+    color:white;
+    vertical-align: top;
+    margin-top: 0%;
+    margin-left: 0%;
+    font-size:30px;
+  }
+
+  .gold {
+    margin-left: 60%;
+    margin-top: -20%;
+  }
+
+  .three-Notes {
+    display: inline-block;
+    color:white;
+    vertical-align: top;
+    margin-top: -18%;
+    margin-left: 25%;
+    font-size:30px;
+  }
+
+  .example-three {
+    margin-top: 15%;
+  }
+
+  .ex-four {
+    margin-top: 8%;
+    width: 400px;
+    display: inline-block;
+     vertical-align: top;
+     margin-right: 5%;
+  }
+
+  .example-four {
+    margin-top: 5%;
+    width: 500px;
+    display: inline-block;
+     vertical-align: top;
+     margin-right: 5%;
+  }
+
+  .example-five {
+   width: 700px;
+    display: inline-block;
+    vertical-align: top;
+    margin-top: 2%;
+  }
+
+  .example-eight {
+    width: 500px;
+     display: inline-block;
+     vertical-align: top;
+     margin-top: 2%;
+   }
+
+   .ex-thirteen {
+    display: block;
+    width: 1000px;
+   }
+
+   .linkOne {
+    display: block;
+    color:white;
+    margin-top: 10%;
+    margin-left: 25%;
+    font-size:30px;
+    text-align: left;
+   }
