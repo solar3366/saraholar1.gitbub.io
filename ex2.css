@@ -3,26 +3,25 @@
   src: url(akira_expanded/Akira.otf);
 }
 
-
-
-
 *{
   margin: 0;
   padding: 0;
   font-family: myFont, Arial;
 }
+
 .banner{
   width: 100%;
-  height: 100vh;
-  background-image: url(images/Pawn2.png);
-  background-size: cover;
+  height: 12vh;
+  background-color: black;
+  /*background-size: cover;
   background-position: center;
+  */
 } 
 
 .logo {
   width: 50px;
   cursor: pointer;
-  margin-left: -50px;
+  margin-left: -20px;
 }
 
 .navbar {
@@ -51,7 +50,7 @@
   content: '';
   height: 2px;
   width: 0;
-  background: rgb(255, 0, 123);
+  background: gray;
   position: absolute;
   left: 0;
   bottom: -5px;
@@ -61,8 +60,6 @@
 .navbar ul li:hover:after {
   width: 100%;
 }
-
-
 
 .content {
   width:100%;
@@ -81,40 +78,9 @@
   margin: 20px auto;
   font-weight: 100;
   line-height: 25px;
-} */
-
-button {
-  width: 200px;
-  padding: 15px 0;
-  text-align: center;
-  margin:20px 10px;
-  border-radius: 10px;
-  font-weight: bold;
-  border:2px solid rgb(255, 0, 123);
-  background-color: rgb(255, 0, 123);
-  color: white;
-  cursor: pointer;
-  /*position: relative;
-  overflow: hidden;*/
-} 
-
-button:hover {
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.25);
 }
 
-button:active {
-  background-color: rgba(255, 0, 123, 0);
-}
-
-#bottom {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  color: white;
-  font-size: 40px;
-}
-
-/*span {
+span {
   background:rgb(255, 0, 123);
   height: 100%;
   width: 0;
@@ -146,14 +112,14 @@ ul li ul.dropdown1 li {
 
 ul li ul.dropdown1 {
   width: 100%;
-  background: rgb(255, 0, 123);
+  background: gray;
   position: absolute;
   /*z-index: 999;*/
   display: none;
 }
 
 ul li a:hover {
-  background: rgb(255, 0, 123);
+  background: gray;
   transition: 1s;
 }
 
@@ -172,17 +138,43 @@ ul li ul.dropdown2 li {
 
 ul li ul.dropdown2 {
   width: 100%;
-  background: rgb(255, 0, 123);
+  background: gray;
   position: absolute;
   /*z-index: 999;*/
   display: none;
 }
 
 ul li a:hover {
-  background: rgb(255, 0, 123);
+  background: gray;
   transition: 1s;
 }
 
 ul li:hover ul.dropdown2 {
   display: block;
+}
+
+.h1 {
+  padding-top: 100px;
+  text-align: center;
+  font-size: 26px;
+}
+
+.title {
+  text-align: center;
+  font-size: 13px;
+}
+
+.main {
+  padding-top: 50px;
+  padding-bottom: 100px;
+  text-align: center;
+  font-size: 15px;
+}
+
+.box {
+  display: inline-block;
+  width: 100%;
+  height: 500px;
+  font-size: 15px;
+  padding-bottom: 20%;
 }
